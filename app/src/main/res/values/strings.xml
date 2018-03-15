@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Misuratore BMI</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="peso">Peso</string>
+    <string name="altezza">Altezza</string>
+    <string name="info">Info</string>
+</resources>
