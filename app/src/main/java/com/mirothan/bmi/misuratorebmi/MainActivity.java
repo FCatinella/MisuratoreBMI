@@ -51,22 +51,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 double ALT = Double.parseDouble(altezza.getText().toString());
                 double BMI = PESO / (ALT * ALT);
                 if(BMI<16.5){
-                    risultato.setText(String.format("Sottopeso di grado severo",BMI));
+                    risultato.setText(String.format("Sottopeso di grado severo : %2.1f",BMI));
                 }
-                else if(BMI<18.4){
-                    risultato.setText(String.format("Sottopeso",BMI));
-                }
-                else if(BMI<24.9){
-                    risultato.setText(String.format("Normale",BMI));
+                else if(BMI<18.4) {
+                    risultato.setText(String.format("Sottopeso : %2.1f", BMI));
+                } else if(BMI<24.9){
+                    risultato.setText(String.format("Normale : %2.1f",BMI));
                 }
                 else if(BMI<30){
-                    risultato.setText(String.format("Obesità di primo grado",BMI));
+                    risultato.setText(String.format("Obesità di primo grado : %2.1f",BMI));
                 }
                 else if(BMI<34.9){
-                    risultato.setText(String.format("Obesità di secondo grado",BMI));
+                    risultato.setText(String.format("Obesità di secondo grado : %2.1f",BMI));
                 }
                 else if(BMI>40){
-                    risultato.setText(String.format("Obesità di terzo grado",BMI));
+                    risultato.setText(String.format("Obesità di terzo grado : %2.1f",BMI));
                 }
 
             }
